@@ -1,0 +1,276 @@
+export const EXPERTS = [
+  {
+    id: "doc-1",
+    name: "Dr. Elena Rostova, MD",
+    type: "doctor",
+    specialty: "Cardiology & Vascular Health",
+    title: "Chief of Interventional Cardiology",
+    institution: "Johns Hopkins Medical Fellow / Mount Sinai",
+    rating: 4.98,
+    reviewCount: 342,
+    experience: "16+ Years",
+    fee: 280,
+    currency: "$",
+    location: "Manhattan Clinic & Virtual",
+    avatar: "/assets/doctor_cardiology.png",
+    verified: true,
+    badgeColor: "emerald",
+    tags: ["Heart Health", "Hypertension", "ECG Analysis", "Preventive Care"],
+    nextAvailable: "Today, 3:30 PM",
+    bio: "Dr. Elena Rostova is a world-renowned interventional cardiologist specializing in preventive cardiovascular care, heart rhythm management, and non-invasive vascular diagnostics. She has treated over 5,000 patients and advocates personalized heart health strategies.",
+    education: "MD from Harvard Medical School, Cardiology Fellowship at Johns Hopkins Hospital.",
+    consultationTypes: ["virtual", "in-person"],
+    slots: {
+      "2026-10-01": ["09:00 AM", "11:30 AM", "02:00 PM", "04:30 PM"],
+      "2026-10-02": ["10:00 AM", "01:15 PM", "03:45 PM"],
+      "2026-10-03": ["08:30 AM", "11:00 AM", "02:30 PM", "05:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Marcus V.", rating: 5, date: "2 days ago", comment: "Dr. Rostova is incredibly attentive and thorough. She explained my cardiac stress test results with total clarity." },
+      { id: 2, user: "Sarah L.", rating: 5, date: "1 week ago", comment: "The online video consultation was seamless. Highly recommend her for second opinions." }
+    ]
+  },
+  {
+    id: "vip-1",
+    name: "Alexander Vance",
+    type: "vip",
+    specialty: "Venture Capital & AI Strategy",
+    title: "Founding Partner @ Nexus Prime & Serial Founder",
+    institution: "Ex-Y Combinator Partner, Forbes 30 Under 30",
+    rating: 4.96,
+    reviewCount: 218,
+    experience: "14+ Years",
+    fee: 750,
+    currency: "$",
+    location: "Penthouse Suite & 1-on-1 Virtual",
+    avatar: "/assets/vip_tech_founder.png",
+    verified: true,
+    badgeColor: "gold",
+    tags: ["Pitch Review", "Fundraising", "AI Product Scale", "Executive Strategy"],
+    nextAvailable: "Tomorrow, 11:00 AM",
+    bio: "Alexander Vance is a prominent tech investor and founder who has backed 4 unicorn startups in AI and Fintech. He offers high-impact 1-on-1 advisory sessions for founders, CEOs, and executives seeking capital raising strategies and rapid scale guidance.",
+    education: "B.S. in Computer Science & Economics, Stanford University.",
+    consultationTypes: ["virtual", "vip-lounge"],
+    slots: {
+      "2026-10-01": ["11:00 AM", "03:00 PM"],
+      "2026-10-02": ["02:00 PM", "05:30 PM"],
+      "2026-10-04": ["10:00 AM", "01:00 PM", "04:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "David K. (Tech Founder)", rating: 5, date: "3 days ago", comment: "Alexander's feedback on our Series A deck saved us months of iteration. Absolutely worth every penny." },
+      { id: 2, user: "Priya M.", rating: 5, date: "2 weeks ago", comment: "Sharp, insightful, and straight to the point. Helped us refine our AI go-to-market strategy." }
+    ]
+  },
+  {
+    id: "doc-2",
+    name: "Dr. Marcus Thorne, MD, PhD",
+    type: "doctor",
+    specialty: "Neurology & Brain Performance",
+    title: "Senior Neurosurgeon & Cognitive Scientist",
+    institution: "Stanford Brain Institute Specialist",
+    rating: 4.99,
+    reviewCount: 412,
+    experience: "20+ Years",
+    fee: 350,
+    currency: "$",
+    location: "Palo Alto Medical Center & Virtual",
+    avatar: "/assets/doctor_neurology.png",
+    verified: true,
+    badgeColor: "emerald",
+    tags: ["Neuro-Diagnostics", "Migraine Relief", "Memory Optimization", "Spine Consultation"],
+    nextAvailable: "Today, 5:00 PM",
+    bio: "Dr. Marcus Thorne is a double board-certified neurosurgeon and brain longevity specialist. He blends cutting-edge neuroscience with clinically proven therapies for neurological disorders, spine care, and executive brain longevity.",
+    education: "MD/PhD from Yale School of Medicine, Surgical Neuro-Residency at Stanford.",
+    consultationTypes: ["virtual", "in-person"],
+    slots: {
+      "2026-10-01": ["10:30 AM", "01:30 PM", "05:00 PM"],
+      "2026-10-02": ["09:00 AM", "11:45 AM", "03:00 PM"],
+      "2026-10-03": ["02:00 PM", "04:15 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Jonathan B.", rating: 5, date: "Yesterday", comment: "Dr. Thorne diagnosed the cause of my chronic nerve pain when 3 previous specialists couldn't. Exceptional doctor!" },
+      { id: 2, user: "Elena P.", rating: 5, date: "5 days ago", comment: "Extremely professional and patient-centric approach." }
+    ]
+  },
+  {
+    id: "vip-2",
+    name: "Seraphina Lin",
+    type: "vip",
+    specialty: "Celebrity Wellness & Holistic Performance",
+    title: "Celebrity Health Strategist & Longevity Coach",
+    institution: "Advisor to Olympians & Fortune 500 CEOs",
+    rating: 4.95,
+    reviewCount: 189,
+    experience: "12+ Years",
+    fee: 480,
+    currency: "$",
+    location: "VIP Private Studio & Virtual HD Call",
+    avatar: "/assets/vip_wellness_coach.png",
+    verified: true,
+    badgeColor: "gold",
+    tags: ["Biohacking", "Executive Energy", "Sleep Protocols", "Mindset Shift"],
+    nextAvailable: "Today, 4:00 PM",
+    bio: "Seraphina Lin is a sought-after holistic wellness coach who designs bespoke biohacking, nutrition, stress management, and physical conditioning regimens for high-profile celebrities, elite athletes, and top corporate executives.",
+    education: "M.S. in Clinical Nutrition, Certified Longevity & Performance Specialist.",
+    consultationTypes: ["virtual", "vip-lounge"],
+    slots: {
+      "2026-10-01": ["01:00 PM", "04:00 PM"],
+      "2026-10-02": ["10:00 AM", "02:30 PM"],
+      "2026-10-03": ["11:30 AM", "03:30 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Chloe W.", rating: 5, date: "4 days ago", comment: "Seraphina transformed my daily stamina and sleep schedule. Her VIP session is gold standard." }
+    ]
+  },
+  {
+    id: "doc-3",
+    name: "Dr. Jonathan Reyes, MD",
+    type: "doctor",
+    specialty: "Dermatology & Aesthetic Medicine",
+    title: "Director of Clinical & Laser Dermatology",
+    institution: "Beverly Hills Aesthetic Center",
+    rating: 4.94,
+    reviewCount: 298,
+    experience: "15+ Years",
+    fee: 250,
+    currency: "$",
+    location: "Beverly Hills & Virtual Tele-Derm",
+    avatar: "/assets/doctor_cardiology.png", // fallback aesthetic doctor image
+    verified: true,
+    badgeColor: "emerald",
+    tags: ["Skin Regeneration", "Acne & Scarring", "Anti-Aging Protocols", "Laser Diagnostics"],
+    nextAvailable: "Tomorrow, 10:00 AM",
+    bio: "Dr. Jonathan Reyes is a board-certified cosmetic dermatologist renowned for natural skin rejuvenation techniques, dermatological surgery, and personalized skin health assessments.",
+    education: "MD from Columbia University Vagelos College of Physicians and Surgeons.",
+    consultationTypes: ["virtual", "in-person"],
+    slots: {
+      "2026-10-01": ["02:00 PM", "04:00 PM"],
+      "2026-10-02": ["10:00 AM", "01:30 PM", "03:30 PM"],
+      "2026-10-03": ["09:00 AM", "12:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Rachel T.", rating: 5, date: "3 days ago", comment: "Super detailed tele-dermatology session. Sent me a customized skincare regimen that worked wonders within a week!" }
+    ]
+  },
+  {
+    id: "vip-3",
+    name: "Lord Harrison Sterling",
+    type: "vip",
+    specialty: "Global Governance & Legal Advisory",
+    title: "Senior International Arbitrator & Former QC",
+    institution: "London International Court of Arbitration Fellow",
+    rating: 4.97,
+    reviewCount: 154,
+    experience: "25+ Years",
+    fee: 1200,
+    currency: "$",
+    location: "London Chambers & Private VIP Virtual Room",
+    avatar: "/assets/vip_tech_founder.png",
+    verified: true,
+    badgeColor: "gold",
+    tags: ["Cross-Border Law", "High-Stakes Mediation", "Crisis Advisory", "VIP Legal Shield"],
+    nextAvailable: "Oct 2, 2:00 PM",
+    bio: "Lord Harrison Sterling provides discreet high-level strategic counsel for multinational leaders, family offices, and prominent figures navigating global regulatory compliance, international contracts, and sensitive dispute mediations.",
+    education: "Master of Laws (LL.M.) Oxford University, Inner Temple Called to the Bar.",
+    consultationTypes: ["virtual", "vip-lounge"],
+    slots: {
+      "2026-10-02": ["02:00 PM", "04:30 PM"],
+      "2026-10-03": ["10:00 AM", "02:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Harrison & Associates", rating: 5, date: "1 week ago", comment: "Unparalleled legal clarity during an international transaction crisis. Discreteness and expertise were exemplary." }
+    ]
+  },
+  {
+    id: "doc-4",
+    name: "Dr. Maya Lin, PsyD",
+    type: "doctor",
+    specialty: "Psychiatry & Executive Mental Health",
+    title: "Chief of Behavioral Health & Stress Resilience",
+    institution: "New York Psychiatric Institute",
+    rating: 4.97,
+    reviewCount: 310,
+    experience: "18+ Years",
+    fee: 300,
+    currency: "$",
+    location: "Upper East Side Clinic & Virtual",
+    avatar: "/assets/vip_wellness_coach.png",
+    verified: true,
+    badgeColor: "emerald",
+    tags: ["Burnout Recovery", "Anxiety & Mood", "High-Performer Therapy", "CBT & Mindset"],
+    nextAvailable: "Today, 6:00 PM",
+    bio: "Dr. Maya Lin specializes in high-stress management, executive cognitive therapy, mood disorder psychiatric evaluations, and mindfulness-based stress reduction strategies.",
+    education: "PsyD from NYU, Postdoctoral Fellowship at Cornell Medical.",
+    consultationTypes: ["virtual", "in-person"],
+    slots: {
+      "2026-10-01": ["03:00 PM", "06:00 PM"],
+      "2026-10-02": ["11:00 AM", "03:00 PM", "05:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Anonymous Exec", rating: 5, date: "4 days ago", comment: "Dr. Lin helped me overcome severe burnout and restructure my leadership stress response." }
+    ]
+  },
+  {
+    id: "vip-4",
+    name: "Camilla De La Cruz",
+    type: "vip",
+    specialty: "Creative Direction & Brand Luxury",
+    title: "Global Creative Officer & Fashion Visionary",
+    institution: "Former VP Design Paris Luxury House",
+    rating: 4.92,
+    reviewCount: 165,
+    experience: "17+ Years",
+    fee: 650,
+    currency: "$",
+    location: "Paris Atelier & VIP Virtual Call",
+    avatar: "/assets/doctor_neurology.png",
+    verified: true,
+    badgeColor: "gold",
+    tags: ["Brand Identity", "Luxury Packaging", "Creative Positioning", "Visual Storytelling"],
+    nextAvailable: "Tomorrow, 4:00 PM",
+    bio: "Camilla De La Cruz mentors brand founders, luxury executives, and creative directors on building timeless visual identities, high-end consumer positioning, and global marketing aesthetics.",
+    education: "École des Beaux-Arts Paris, BA in Fine Arts & Design Strategy.",
+    consultationTypes: ["virtual", "vip-lounge"],
+    slots: {
+      "2026-10-01": ["04:00 PM"],
+      "2026-10-02": ["01:00 PM", "04:00 PM"],
+    },
+    reviews: [
+      { id: 1, user: "Antoine R.", rating: 5, date: "5 days ago", comment: "Camilla's vision completely redefined our brand launch campaign. Masterclass consultation!" }
+    ]
+  }
+];
+
+export const SPECIALTIES = [
+  "All Categories",
+  "Cardiology & Vascular Health",
+  "Venture Capital & AI Strategy",
+  "Neurology & Brain Performance",
+  "Celebrity Wellness & Holistic Performance",
+  "Dermatology & Aesthetic Medicine",
+  "Psychiatry & Executive Mental Health",
+  "Global Governance & Legal Advisory",
+  "Creative Direction & Brand Luxury"
+];
+
+export const INITIAL_USER_APPOINTMENTS = [
+  {
+    bookingId: "APPT-89421",
+    expertId: "doc-1",
+    expertName: "Dr. Elena Rostova, MD",
+    expertTitle: "Chief of Interventional Cardiology",
+    type: "doctor",
+    consultationType: "virtual",
+    consultationTypeLabel: "Virtual HD Video Call",
+    date: "2026-10-01",
+    time: "11:30 AM",
+    fee: 280,
+    status: "Upcoming",
+    patientName: "Alex Mercer",
+    patientEmail: "alex.mercer@example.com",
+    patientPhone: "+1 (555) 234-5678",
+    reason: "Annual cardiovascular checkup and ECG analysis review.",
+    qrCodeData: "APPT-89421-ROSTOVA-20261001",
+    avatar: "/assets/doctor_cardiology.png"
+  }
+];
